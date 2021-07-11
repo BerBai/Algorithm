@@ -25,11 +25,17 @@ x: 左边数之和 - 右边数之和
 
 ① x>0
 Alice必然在左侧放9，右侧放0。
+
 假设Alice在左侧？中放置a个9，她还有 ![](https://latex.codecogs.com/svg.image?\frac{A&plus;B}{2}-a) 次操作，这些操作必然是在右侧？中放0。Bob可以在右侧？中放 ![](https://latex.codecogs.com/svg.image?B-(\frac{A&plus;B}{2}-a)\&space;=\&space;\frac{B-A}{2}&plus;a) 次，且一定会是9。
+
 最终左右两侧的数之差 ![](https://latex.codecogs.com/svg.image?\Delta=9*a-9*(\frac{B-A}{2}&plus;a)&space;&plus;&space;x=9*\frac{A-B}{2}&plus;x)
+
 即 ![](https://latex.codecogs.com/svg.image?\Delta&space;=9*\frac{A-B}{2}&plus;x>0) Alice获胜
+
 ② x<0
+
 同理，最终左右两侧的数之差 ![](https://latex.codecogs.com/svg.image?\Delta'&space;=9*\frac{B-A}{2}-x) ，即 ![](https://latex.codecogs.com/svg.image?\Delta'&space;=9*\frac{B-A}{2}-x<0) Alice获胜。
+
 **注意**：![](https://latex.codecogs.com/svg.image?\Delta=-\Delta')，![](https://latex.codecogs.com/svg.image?\Delta>0)和![](https://latex.codecogs.com/svg.image?\Delta'<0)，即![](https://latex.codecogs.com/svg.image?\Delta!=0)的情况下，Alice获胜
 
 
