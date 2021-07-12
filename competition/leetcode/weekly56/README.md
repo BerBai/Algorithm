@@ -12,6 +12,8 @@
 ## 思路
 ### b
 BFS模板题
+
+查看[BFS模板代码](/template/BFS.java)
 ### c
 模拟题
 
