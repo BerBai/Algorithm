@@ -10,3 +10,5 @@
 |[d.合并多棵二叉搜索树](https://leetcode-cn.com/problems/merge-bsts-to-create-single-bst/)|[d.java](/competition/leetcode/weeklyOne249/d.java)|
 
 ## 思路
+### b
+枚举两侧的字符，再对中间字符进行去重处理
