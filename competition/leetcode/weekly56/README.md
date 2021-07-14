@@ -38,7 +38,16 @@ Alice必然在左侧放9，右侧放0。
 
 同理，最终左右两侧的数之差 ![](https://latex.codecogs.com/svg.image?\Delta'&space;=9*\frac{B-A}{2}-x) ，即 ![](https://latex.codecogs.com/svg.image?\Delta'&space;=9*\frac{B-A}{2}-x<0) Alice获胜。
 
-**注意**：![](https://latex.codecogs.com/svg.image?\Delta=-\Delta')，![](https://latex.codecogs.com/svg.image?\Delta>0)和![](https://latex.codecogs.com/svg.image?\Delta'<0)，即![](https://latex.codecogs.com/svg.image?\Delta!=0)的情况下，Alice获胜
+**注意**：![](https://latex.codecogs.com/svg.image?\Delta=-\Delta') ，![](https://latex.codecogs.com/svg.image?\Delta>0) 和 ![](https://latex.codecogs.com/svg.image?\Delta'<0) ，即 ![](https://latex.codecogs.com/svg.image?\Delta!=0) 的情况下，Alice获胜
 
+### d
 
+动态规划
 
+dp[i][j]在恰好用了i时间，到达点j城市点所需最小费用
+
+有条路径 city1--->city2 所用时间为 time，则i时间达到city2的最小费用
+dp[i][city2] = Math.min(dp[i][city2], dp[i - time][city1] + passingFees[city2]);
+
+由于题目是双向路，同时也有city2--->city1，则i时间达到city1的最小费用
+dp[i][city1] = Math.min(dp[i][city1], dp[i - time][city2] + passingFees[city1]);
