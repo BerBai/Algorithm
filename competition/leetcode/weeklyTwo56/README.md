@@ -4,10 +4,10 @@
 ## 赛题及题解
 |赛题|题解|
 | ---- | ----|
-|[a.统计平方和三元组的数目](https://leetcode-cn.com/problems/count-square-sum-triples/)|[a.java](/competition/leetcode/weekly56/a.java)|
-|[b.迷宫中离入口最近的出口](https://leetcode-cn.com/problems/nearest-exit-from-entrance-in-maze/)|[b.java](/competition/leetcode/weekly56/b.java)|
-|[c.求和游戏](https://leetcode-cn.com/problems/sum-game/)|[c.java](/competition/leetcode/weekly56/c.java)|
-|[d.规定时间内到达终点的最小花费](https://leetcode-cn.com/problems/minimum-cost-to-reach-destination-in-time/)|[d.java](/competition/leetcode/weekly56/d.java)|
+|[a.统计平方和三元组的数目](https://leetcode-cn.com/problems/count-square-sum-triples/)|[a.java](/competition/leetcode/weeklyTwo56/a.java)|
+|[b.迷宫中离入口最近的出口](https://leetcode-cn.com/problems/nearest-exit-from-entrance-in-maze/)|[b.java](/competition/leetcode/weeklyTwo56/b.java)|
+|[c.求和游戏](https://leetcode-cn.com/problems/sum-game/)|[c.java](/competition/leetcode/weeklyTwo56/c.java)|
+|[d.规定时间内到达终点的最小花费](https://leetcode-cn.com/problems/minimum-cost-to-reach-destination-in-time/)|[d.java](/competition/leetcode/weeklyTwo56/d.java)|
 
 ## 思路
 ### b

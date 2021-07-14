@@ -1,4 +1,4 @@
-package leetcode.weekly56;
+package leetcode.weeklyTwo56;
 
 /**
  * @author ber
