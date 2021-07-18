@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @version 1.0
  * @date 21/7/18 09:59
  */
-public class Offer10 {
+public class Offer10_1 {
     class Solution {
         // timeout
         public int fib1(int n) {
