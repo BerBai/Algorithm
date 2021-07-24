@@ -17,7 +17,6 @@ public class Offer19 {
         }
 
         public static boolean matchStr(char[] s, char[] p, int i, int j) {
-//            System.out.println(i + " " + j);
             if (s.length - i == 0 && p.length - j == 0) {
                 return true;
             }
