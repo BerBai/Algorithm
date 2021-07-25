@@ -132,3 +132,19 @@ mid
 - 处理空格，index相应的后移
 - 如果当前索引index与字符串长度相等，说明遍历到了末尾，但是还要满足hasNum为true才可以最终返回true，因为如果字符串里全是符号没有数字的话是不行的，而且e后面没有数字也是不行的，但是没有符号是可以的，所以4个flag里只要判断一下hasNum就行；所以最后返回的是hasNum && index == n
 - 如果字符串中间有空格，按以上思路是无法遍历到末尾的，index不会与n相等，返回的就是false
+
+
+## 面试题24
+### 递归解法
+
+假设链表为：
+
+![](https://latex.codecogs.com/svg.image?n_1&space;\to&space;...&space;\to&space;n_{k-1}\to&space;n_k\to&space;n_{k&plus;1}&space;\to&space;...&space;\to&space;n_m\to\varnothing&space;)
+
+若从节点 ![](https://latex.codecogs.com/svg.image?n_{k&plus;1}) 到 ![](https://latex.codecogs.com/svg.image?n_k) 已经被反转，而我们正处于
+
+所以 ![](https://latex.codecogs.com/svg.image?n_k.next.next&space;=&space;n_k)
+
+![](https://latex.codecogs.com/svg.image?n_1&space;\to&space;...&space;\to&space;n_{k-1}\to&space;n_k\to&space;n_{k&plus;1}&space;\leftarrow&space;&space;...&space;\leftarrow&space;&space;n_m\leftarrow&space;\varnothing&space;)
+
+注意：![](https://latex.codecogs.com/svg.image?n_1) 必须指向 null，否则会出现环
