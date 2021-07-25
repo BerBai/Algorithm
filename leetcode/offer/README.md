@@ -141,7 +141,7 @@ mid
 
 ![](https://latex.codecogs.com/svg.image?n_1&space;\to&space;...&space;\to&space;n_{k-1}\to&space;n_k\to&space;n_{k&plus;1}&space;\to&space;...&space;\to&space;n_m\to\varnothing&space;)
 
-若从节点 ![](https://latex.codecogs.com/svg.image?n_{k&plus;1}) 到 ![](https://latex.codecogs.com/svg.image?n_k) 已经被反转，而我们正处于
+若从节点 ![](https://latex.codecogs.com/svg.image?n_{k&plus;1}) 到 ![](https://latex.codecogs.com/svg.image?n_m) 已经被反转，而我们正处于 ![](https://latex.codecogs.com/svg.image?n_k)
 
 所以 ![](https://latex.codecogs.com/svg.image?n_k.next.next&space;=&space;n_k)
 
