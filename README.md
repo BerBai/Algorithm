@@ -1,7 +1,7 @@
 🐌 Algorithm
 ====================================
 
-<img src="docs/logo.png" alt="repo-icon" width="20%" align="right" />
+<img src="docs/logo.png" alt="repo-icon" width="10%" align="right" />
 
 [![Build Status](https://img.shields.io/travis/com/BerBai/Algorithm/dev-2.x?logo=travis-ci&logoColor=white)](https://travis-ci.com/github/BerBai/Algorithm)
 [![GitHub release](https://img.shields.io/github/release/BerBai/Algorithm.svg)](https://github.com/BerBai/Algorithm/releases)
