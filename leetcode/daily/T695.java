@@ -52,7 +52,7 @@ public class T695 {
             m = grid[0].length;
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < m; j++) {
-                    int sumNum = grid[i][j];
+                    int sumNum = 0;
                     Queue<int[]> queue = new LinkedList<>();
                     queue.offer(new int[]{i, j});
                     while (!queue.isEmpty()) {
