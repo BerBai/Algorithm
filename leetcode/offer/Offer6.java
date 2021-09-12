@@ -1,8 +1,6 @@
 package offer;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * @author ber
@@ -55,5 +53,21 @@ public class Offer6 {
         }
         dp(p.next, list);
         list.add(p.val);
+    }
+
+    class Solution {
+        public int[] reversePrint(ListNode head) {
+            LinkedList<Integer> queue = new LinkedList<>();
+            while (head != null) {
+                queue.offerFirst(head.val);
+                head = head.next;
+            }
+            int m = queue.size();
+            int[] ans = new int[m];
+            for (int i = 0; i < m; i++) {
+                ans[i] = queue.removeFirst();
+            }
+            return ans;
+        }
     }
 }

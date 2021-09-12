@@ -12,8 +12,8 @@ import java.util.List;
 public class Offer32_2 {
     public class TreeNode {
         int val;
-        Offer32_1.TreeNode left;
-        Offer32_1.TreeNode right;
+        TreeNode left;
+        TreeNode right;
 
         TreeNode(int x) {
             val = x;
