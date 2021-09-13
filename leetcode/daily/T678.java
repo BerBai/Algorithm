@@ -9,6 +9,25 @@ import java.util.LinkedList;
  */
 public class T678 {
     static class Solution {
+
+        public static boolean test(String s) {
+            LinkedList<Integer> stack = new LinkedList<>();
+            char[] chars = s.toCharArray();
+            int n = s.length(), i;
+            for (i = 0; i < n; i++) {
+                if (chars[i] == '(') {
+                    stack.offerLast(i);
+                } else if (chars[i] == ')') {
+                    if (!stack.isEmpty()) {
+                        stack.removeLast();
+                    } else {
+                        return false;
+                    }
+                }
+            }
+            return stack.isEmpty();
+        }
+
         public static boolean checkValidString(String s) {
             LinkedList<Integer> stackA = new LinkedList<>();
             LinkedList<Integer> stackB = new LinkedList<>();
@@ -48,8 +67,8 @@ public class T678 {
     public static void main(String[] args) {
 
         System.out.println(Solution.checkValidString("()(**"));
-        System.out.println(Solution.checkValidString("()"));
-        System.out.println(Solution.checkValidString("(()())"));
+        System.out.println(Solution.test("(()"));
+        System.out.println(Solution.test("(()()))"));
         System.out.println(Solution.checkValidString("(()()*()"));
     }
 }
