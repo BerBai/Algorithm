@@ -16,4 +16,23 @@ class Solution {
         }
         return map.get(maxNum);
     }
+
+    /**
+        基于上述代码的贪心实现
+     */
+    public int countGoodRectangles_greed(int[][] rectangles) {
+        int maxNum = 0;
+        int ans = 0;
+        int n = rectangles.length;
+        for(int i = 0; i < n; i++) {
+            int minNum = Math.min(rectangles[i][0], rectangles[i][1]);
+            if(minNum > maxNum) {
+                ans=1;
+            } else if(minNum == maxNum) {
+                ans++;
+            }
+            maxNum = Math.max(maxNum, minNum);
+        }
+        return ans;
+    }
 }
