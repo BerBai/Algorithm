@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class T1020 {
     
 }
@@ -10,6 +13,7 @@ class Solution {
     private int m, n;
     private int[][] visited;
 
+    // 解法一 深度优先
     public void dfs(int i, int j) {
         visited[i][j] = 0;
         for(int k=0;k<4;k++) {
@@ -17,6 +21,24 @@ class Solution {
             int y = j + dirs[k][1];
             if(x>=0 && x<m && y>=0 && y<n && visited[x][y] == 1) {
                 dfs(x, y);
+            }
+        }
+    }
+
+    // 解法二： 广度优先
+    public void bfs(int i, int j) {
+        visited[i][j] = 0;
+        Queue<int[]> queue = new LinkedList();
+        queue.add(new int[]{i,j});
+        while (!queue.isEmpty()) {
+            int[] tmp = queue.poll();
+            for(int k=0;k<4;k++) {
+                int x = tmp[0] + dirs[k][0];
+                int y = tmp[1] + dirs[k][1];
+                if(x>=0 && x<m && y>=0 && y<n && visited[x][y] == 1) {
+                    visited[x][y] = 0;
+                    queue.add(new int[]{x,y});
+                }
             }
         }
     }
