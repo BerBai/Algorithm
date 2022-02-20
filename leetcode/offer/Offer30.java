@@ -8,7 +8,12 @@ import java.util.LinkedList;
  * @date 21/7/27 10:10
  */
 public class Offer30 {
-    // LinkedList的add()，是在尾部进。peek()是头部出
+    // LinkedList的add()是在尾部进。peek()是头部出
+    /**
+     * 两个队列实现，stackA记录栈元素，stackB记录栈元素位置的最小元素
+     * 1. 进栈时，stackB为空或stackB栈顶元素大于等于进栈元素时更新stackB
+     * 2. 出栈时，出栈元素与stackB栈顶元素相等时，一同出栈
+     */
     class MinStack {
         LinkedList<Integer> stackA, stackB;
 
@@ -42,7 +47,7 @@ public class Offer30 {
         }
     }
 
-    // 区分LinkedList的pop()、push()，元素在头部进、出
+    // 区分LinkedList的pop()元素在头部进、push()元素在尾部出
     class MinStack2 {
         LinkedList<Integer> stackA, stackB;
 
