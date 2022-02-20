@@ -76,4 +76,45 @@ public class Offer30 {
         }
     }
 
+    // 定义一个带最小值的链表，记录栈元素位置的最小值
+    class MinStack3 {
+        private class Node{
+            int val;
+            int minVal;
+            Node next;
+    
+            public Node(int val, int minVal, Node next) {
+                this.val = val;
+                this.minVal = minVal;
+                this.next = next;
+            }
+        }
+    
+        private Node stack;
+    
+        /** initialize your data structure here. */
+        public MinStack() {
+    
+        }
+        
+        public void push(int x) {
+            if(stack == null) {
+                stack = new Node(x, x, null);
+            } else {
+                stack = new Node(x, Math.min(stack.minVal, x), stack);
+            }
+        }
+        
+        public void pop() {
+            stack = stack.next;
+        }
+        
+        public int top() {
+            return stack.val;
+        }
+        
+        public int min() {
+            return stack.minVal;
+        }
+    }
 }
