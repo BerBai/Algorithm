@@ -7,7 +7,7 @@ import java.util.*;
  * @version 1.0
  * @date 21/9/16 08:00
  */
-class Solution {
+class T212 {
     int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
     public List<String> findWords(char[][] board, String[] words) {

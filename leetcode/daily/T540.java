@@ -1,11 +1,9 @@
-public class T540 {
-    
-}
+package daily;
 
 // 假设最后一个数是单数，先赋值给ans
 // 再+2遍历数组，对比nums[i] nums[i+1]，如果是单数则更新
 // 否则，则假设成立
-class Solution {
+class T540 {
     public int singleNonDuplicate(int[] nums) {
         int n = nums.length;
         int ans = nums[n-1];

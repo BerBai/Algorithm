@@ -98,7 +98,7 @@ public class Offer30 {
         private Node stack;
     
         /** initialize your data structure here. */
-        public MinStack() {
+        public MinStack3() {
     
         }
         
