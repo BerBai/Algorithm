@@ -5,7 +5,7 @@ package top100.linkedList;
  * @version 1.0
  * @date 22/3/26 12:56
  */
-public class Top002 {
+public class T002 {
 
 
     /**
