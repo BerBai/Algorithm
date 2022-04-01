@@ -8,7 +8,7 @@ package top100.slidingWindow;
 public class T009 {
     /**
      * 题：https://leetcode-cn.com/problems/ZVAVXX/
-     * 求乘积小于k的连续子数组个数
+     * 求乘积小于k的连续子数组个数。 正整数
      *
      * @param nums
      * @param k

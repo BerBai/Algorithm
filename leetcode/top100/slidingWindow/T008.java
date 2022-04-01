@@ -8,7 +8,7 @@ package top100.slidingWindow;
 public class T008 {
     /**
      * 题：https://leetcode-cn.com/problems/2VG8Kg/
-     * 求最短连续子数组长度，子数组和满足大于等于target
+     * 求最短连续子数组长度，子数组和满足大于等于target。正整数
      *
      * @param s
      * @param nums
